@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="novena_fpga_tb.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="novena_fpga_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="55" />
+   <wvobject fp_name="/novena_fpga_tb/reg_ro_41FFE/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reg_ro_41FFE/bus_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus_a[18:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_a[18:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reg_ro_41FFE/my_a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">my_a[18:0]</obj_property>
+      <obj_property name="ObjectShortName">my_a[18:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reg_ro_41FFE/reg_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_d[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reg_ro_41FFE/re" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">re</obj_property>
+      <obj_property name="ObjectShortName">re</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reg_ro_41FFE/bus_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_d[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reg_ro_41FFE/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[15:0]</obj_property>
+      <obj_property name="ObjectShortName">state[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider119" type="divider">
+      <obj_property name="label">defaults</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_DA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_DA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">EIM_DA[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_DA_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_DA_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">EIM_DA_in[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_DA_t" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_DA_t</obj_property>
+      <obj_property name="ObjectShortName">EIM_DA_t</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_dout[15:0]</obj_property>
+      <obj_property name="ObjectShortName">eim_dout[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_din" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_din[15:0]</obj_property>
+      <obj_property name="ObjectShortName">eim_din[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/cs0_r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs0_r</obj_property>
+      <obj_property name="ObjectShortName">cs0_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/rw_r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_r</obj_property>
+      <obj_property name="ObjectShortName">rw_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/din_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">din_r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din_r[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/bus_addr_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus_addr_r[18:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_addr_r[18:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/adv_r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adv_r</obj_property>
+      <obj_property name="ObjectShortName">adv_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/cs0_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs0_in</obj_property>
+      <obj_property name="ObjectShortName">cs0_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/rw_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_in</obj_property>
+      <obj_property name="ObjectShortName">rw_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/adv_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">adv_in</obj_property>
+      <obj_property name="ObjectShortName">adv_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/din_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">din_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din_in[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/a_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a_in[2:0]</obj_property>
+      <obj_property name="ObjectShortName">a_in[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/ro_d_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ro_d_r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ro_d_r[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/ro_d_b_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ro_d_b_r[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ro_d_b_r[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_rdcs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_rdcs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">eim_rdcs[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_dout_pipe" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_dout_pipe[15:0]</obj_property>
+      <obj_property name="ObjectShortName">eim_dout_pipe[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_dout_pipe2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_dout_pipe2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">eim_dout_pipe2[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_d_t" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_d_t[15:0]</obj_property>
+      <obj_property name="ObjectShortName">eim_d_t[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_lba_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_lba_reg</obj_property>
+      <obj_property name="ObjectShortName">eim_lba_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/eim_oe_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">eim_oe_reg</obj_property>
+      <obj_property name="ObjectShortName">eim_oe_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/clk50" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk50</obj_property>
+      <obj_property name="ObjectShortName">clk50</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/bclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bclk</obj_property>
+      <obj_property name="ObjectShortName">bclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/bclk_dll" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bclk_dll</obj_property>
+      <obj_property name="ObjectShortName">bclk_dll</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/clk25" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk25</obj_property>
+      <obj_property name="ObjectShortName">clk25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/ro_d_b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ro_d_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ro_d_b[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/r40000wo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r40000wo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r40000wo[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/r40002wo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r40002wo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r40002wo[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/ro_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ro_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ro_d[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/rC04_0000wo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rC04_0000wo[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rC04_0000wo[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/rC04_0008wo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rC04_0008wo[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rC04_0008wo[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/reg_0_test" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_0_test[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_0_test[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_BCLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_BCLK</obj_property>
+      <obj_property name="ObjectShortName">EIM_BCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_CS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_CS[1:0]</obj_property>
+      <obj_property name="ObjectShortName">EIM_CS[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_A[18:16]</obj_property>
+      <obj_property name="ObjectShortName">EIM_A[18:16]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_LBA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_LBA</obj_property>
+      <obj_property name="ObjectShortName">EIM_LBA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_OE" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_OE</obj_property>
+      <obj_property name="ObjectShortName">EIM_OE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_RW" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_RW</obj_property>
+      <obj_property name="ObjectShortName">EIM_RW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/EIM_DA_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">EIM_DA_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">EIM_DA_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/CLK2_N" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK2_N</obj_property>
+      <obj_property name="ObjectShortName">CLK2_N</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/CLK2_P" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK2_P</obj_property>
+      <obj_property name="ObjectShortName">CLK2_P</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/RESETBMCU" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESETBMCU</obj_property>
+      <obj_property name="ObjectShortName">RESETBMCU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/novena_fpga_tb/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[23:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
