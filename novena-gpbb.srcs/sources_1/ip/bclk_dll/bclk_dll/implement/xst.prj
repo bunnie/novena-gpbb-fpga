@@ -1,0 +1,2 @@
+verilog work ../../bclk_dll.v
+verilog work ../example_design/bclk_dll_exdes.v

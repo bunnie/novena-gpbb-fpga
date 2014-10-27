@@ -1,0 +1,55 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'bclk_dll'...
+WARNING:sim - A core named 'bclk_dll' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'bclk_dll'...
+Delivering associated files for 'bclk_dll'...
+WARNING:sim - Component clk_wiz_v3_5 does not have a valid model name for
+   Verilog synthesis
+Delivering EJava files for 'bclk_dll'...
+Delivered 3 files into directory
+C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_cg/b
+clk_dll
+Delivered 1 file into directory
+C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_cg/b
+clk_dll
+Generating ASY schematic symbol...
+Loading device for application Rf_Device from file '6slx45.nph' in environment
+C:\Xilinx\14.5\ISE_DS\ISE\.
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating ISE project...
+XCO file found: bclk_dll.xco
+XMDF file found: bclk_dll_xmdf.tcl
+Adding
+C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_cg/b
+clk_dll/example_design/bclk_dll_exdes.ucf -view all -origin_type created
+Adding
+C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_cg/b
+clk_dll/example_design/bclk_dll_exdes.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_
+   cg/bclk_dll/example_design/bclk_dll_exdes.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_cg/b
+clk_dll.asy -view all -origin_type imported
+Adding
+C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_cg/b
+clk_dll.v -view all -origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_
+   cg/bclk_dll.v" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/local/local_copy/novena-gpbb/novena-gpbb.srcs/sources_1/ip/bclk_dll/tmp/_cg/b
+clk_dll.veo -view all -origin_type imported
+WARNING: This core does not have a top level called "/bclk_dll"
+WARNING: Top level has been set to "/bclk_dll_exdes"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'coregen'.

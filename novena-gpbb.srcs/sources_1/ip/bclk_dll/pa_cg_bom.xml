@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+  <IPInstance name="bclk_dll">
+    <FileSets>
+      <FileSet generator="apply_current_project_options_generator">
+        <File name="./apply_current_project_options_generator.xlog" type="ignore" timestamp="Sun Oct 26 09:45:27 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="model_parameter_resolution_generator">
+        <File name="./model_parameter_resolution_generator.xlog" type="ignore" timestamp="Sun Oct 26 09:45:27 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="ip_xco_generator">
+        <File name="./bclk_dll.xco" type="xco" timestamp="Sun Oct 26 09:45:01 GMT 2014" checksum="0x742ED1EC"></File>
+      </FileSet>
+      <FileSet generator="tcl_flow_generator">
+        <File name="./bclk_dll/example_design/bclk_dll_exdes.ucf" type="ucf" timestamp="Sun Oct 26 09:45:09 GMT 2014" checksum="0xB6972254"></File>
+        <File name="./bclk_dll/example_design/bclk_dll_exdes.v" type="verilog" timestamp="Sun Oct 26 09:45:02 GMT 2014" checksum="0x168E0821"></File>
+        <File name="./bclk_dll/example_design/bclk_dll_exdes.xdc" type="ignore" timestamp="Sun Oct 26 09:45:10 GMT 2014" checksum="0xDF3AADB3"></File>
+        <File name="./bclk_dll/implement/implement.bat" type="ignore" timestamp="Sun Oct 26 09:45:09 GMT 2014" checksum="0xB2E4DC82"></File>
+        <File name="./bclk_dll/implement/implement.sh" type="ignore" timestamp="Sun Oct 26 09:45:09 GMT 2014" checksum="0xC789CE13"></File>
+        <File name="./bclk_dll/implement/planAhead_ise.bat" type="ignore" timestamp="Sun Oct 26 09:45:08 GMT 2014" checksum="0x6966A508"></File>
+        <File name="./bclk_dll/implement/planAhead_ise.sh" type="ignore" timestamp="Sun Oct 26 09:45:08 GMT 2014" checksum="0x7F8B5943"></File>
+        <File name="./bclk_dll/implement/planAhead_ise.tcl" type="ignore" timestamp="Sun Oct 26 09:45:08 GMT 2014" checksum="0x1FC0B08D"></File>
+        <File name="./bclk_dll/implement/planAhead_rdn.bat" type="ignore" timestamp="Sun Oct 26 09:45:08 GMT 2014" checksum="0xB9373CFA"></File>
+        <File name="./bclk_dll/implement/planAhead_rdn.sh" type="ignore" timestamp="Sun Oct 26 09:45:08 GMT 2014" checksum="0xDCE9D96C"></File>
+        <File name="./bclk_dll/implement/planAhead_rdn.tcl" type="ignore" timestamp="Sun Oct 26 09:45:09 GMT 2014" checksum="0x6F148A03"></File>
+        <File name="./bclk_dll/implement/xst.prj" type="ignore" timestamp="Sun Oct 26 09:45:10 GMT 2014" checksum="0x2B523223"></File>
+        <File name="./bclk_dll/implement/xst.scr" type="ignore" timestamp="Sun Oct 26 09:45:10 GMT 2014" checksum="0xD8FF513B"></File>
+        <File name="./bclk_dll/simulation/bclk_dll_tb.v" type="ignore" timestamp="Sun Oct 26 09:45:03 GMT 2014" checksum="0x9C4702B0"></File>
+        <File name="./bclk_dll/simulation/functional/simcmds.tcl" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0x5D79AA9C"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_isim.bat" type="ignore" timestamp="Sun Oct 26 09:45:06 GMT 2014" checksum="0x81846019"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_isim.sh" type="ignore" timestamp="Sun Oct 26 09:45:06 GMT 2014" checksum="0xA75ECFF7"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_mti.bat" type="ignore" timestamp="Sun Oct 26 09:45:05 GMT 2014" checksum="0xD3C66799"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_mti.do" type="ignore" timestamp="Sun Oct 26 09:45:05 GMT 2014" checksum="0x9DF89CF9"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_mti.sh" type="ignore" timestamp="Sun Oct 26 09:45:04 GMT 2014" checksum="0xE2CBEA15"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_ncsim.sh" type="ignore" timestamp="Sun Oct 26 09:45:06 GMT 2014" checksum="0x8637CAF9"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_vcs.sh" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0x8C242ECB"></File>
+        <File name="./bclk_dll/simulation/functional/ucli_commands.key" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0xA4F404D8"></File>
+        <File name="./bclk_dll/simulation/functional/vcs_session.tcl" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0x318C57CF"></File>
+        <File name="./bclk_dll/simulation/functional/wave.do" type="ignore" timestamp="Sun Oct 26 09:45:05 GMT 2014" checksum="0x51E7461A"></File>
+        <File name="./bclk_dll/simulation/functional/wave.sv" type="ignore" timestamp="Sun Oct 26 09:45:06 GMT 2014" checksum="0xF3835A09"></File>
+        <File name="./bclk_dll/simulation/timing/bclk_dll_tb.v" type="ignore" timestamp="Sun Oct 26 09:45:03 GMT 2014" checksum="0x85177F5B"></File>
+        <File name="./bclk_dll/simulation/timing/sdf_cmd_file" type="ignore" timestamp="Sun Oct 26 09:45:06 GMT 2014" checksum="0x8ABB2ECE"></File>
+        <File name="./bclk_dll/simulation/timing/simcmds.tcl" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0x6F2FB33D"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_isim.sh" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0xB0A1B5DE"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_mti.bat" type="ignore" timestamp="Sun Oct 26 09:45:05 GMT 2014" checksum="0x3EB6B172"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_mti.do" type="ignore" timestamp="Sun Oct 26 09:45:05 GMT 2014" checksum="0x30054CF7"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_mti.sh" type="ignore" timestamp="Sun Oct 26 09:45:05 GMT 2014" checksum="0x4A9ACEC6"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_ncsim.sh" type="ignore" timestamp="Sun Oct 26 09:45:06 GMT 2014" checksum="0x1391D4A3"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_vcs.sh" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0x47B92F24"></File>
+        <File name="./bclk_dll/simulation/timing/ucli_commands.key" type="ignore" timestamp="Sun Oct 26 09:45:07 GMT 2014" checksum="0x9DC0E037"></File>
+        <File name="./bclk_dll/simulation/timing/vcs_session.tcl" type="ignore" timestamp="Sun Oct 26 09:45:08 GMT 2014" checksum="0x28340249"></File>
+        <File name="./bclk_dll/simulation/timing/wave.do" type="ignore" timestamp="Sun Oct 26 09:45:06 GMT 2014" checksum="0x4A4565F1"></File>
+        <File name="./bclk_dll.ucf" type="ignore" timestamp="Sun Oct 26 09:45:09 GMT 2014" checksum="0xBE7EC4BE"></File>
+        <File name="./bclk_dll.v" type="verilog" timestamp="Sun Oct 26 09:45:02 GMT 2014" checksum="0x434FF447"></File>
+        <File name="./bclk_dll.veo" type="veo" timestamp="Sun Oct 26 09:45:03 GMT 2014" checksum="0x4C92A34F"></File>
+        <File name="./bclk_dll.xdc" type="ignore" timestamp="Sun Oct 26 09:45:09 GMT 2014" checksum="0x08511702"></File>
+        <File name="./bclk_dll_xmdf.tcl" type="tcl" timestamp="Sun Oct 26 09:45:04 GMT 2014" checksum="0x7B19EC8A"></File>
+      </FileSet>
+      <FileSet generator="associated_files_generator">
+        <File name="./bclk_dll/clk_wiz_v3_5_readme.txt" type="ignore" timestamp="Wed Mar 27 03:35:24 GMT 2013" checksum="0x1BF90E4F"></File>
+      </FileSet>
+      <FileSet generator="ejava_generator">
+        <File name="./bclk_dll/example_design/bclk_dll_exdes.ucf" type="ucf" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xB6972254"></File>
+        <File name="./bclk_dll/example_design/bclk_dll_exdes.v" type="verilog" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x168E0821"></File>
+        <File name="./bclk_dll/example_design/bclk_dll_exdes.xdc" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xDF3AADB3"></File>
+        <File name="./bclk_dll/implement/implement.bat" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xB2E4DC82"></File>
+        <File name="./bclk_dll/implement/implement.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xC789CE13"></File>
+        <File name="./bclk_dll/implement/planAhead_ise.bat" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x6966A508"></File>
+        <File name="./bclk_dll/implement/planAhead_ise.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x7F8B5943"></File>
+        <File name="./bclk_dll/implement/planAhead_ise.tcl" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x1FC0B08D"></File>
+        <File name="./bclk_dll/implement/planAhead_rdn.bat" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xB9373CFA"></File>
+        <File name="./bclk_dll/implement/planAhead_rdn.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xDCE9D96C"></File>
+        <File name="./bclk_dll/implement/planAhead_rdn.tcl" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x6F148A03"></File>
+        <File name="./bclk_dll/implement/xst.prj" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x2B523223"></File>
+        <File name="./bclk_dll/implement/xst.scr" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xD8FF513B"></File>
+        <File name="./bclk_dll/simulation/bclk_dll_tb.v" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x9C4702B0"></File>
+        <File name="./bclk_dll/simulation/functional/simcmds.tcl" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x5D79AA9C"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_isim.bat" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x81846019"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_isim.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xA75ECFF7"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_mti.bat" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xD3C66799"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_mti.do" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x9DF89CF9"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_mti.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xE2CBEA15"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_ncsim.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x8637CAF9"></File>
+        <File name="./bclk_dll/simulation/functional/simulate_vcs.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x8C242ECB"></File>
+        <File name="./bclk_dll/simulation/functional/ucli_commands.key" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xA4F404D8"></File>
+        <File name="./bclk_dll/simulation/functional/vcs_session.tcl" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x318C57CF"></File>
+        <File name="./bclk_dll/simulation/functional/wave.do" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x51E7461A"></File>
+        <File name="./bclk_dll/simulation/functional/wave.sv" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xF3835A09"></File>
+        <File name="./bclk_dll/simulation/timing/bclk_dll_tb.v" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x85177F5B"></File>
+        <File name="./bclk_dll/simulation/timing/sdf_cmd_file" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x8ABB2ECE"></File>
+        <File name="./bclk_dll/simulation/timing/simcmds.tcl" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x6F2FB33D"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_isim.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xB0A1B5DE"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_mti.bat" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x3EB6B172"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_mti.do" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x30054CF7"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_mti.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x4A9ACEC6"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_ncsim.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x1391D4A3"></File>
+        <File name="./bclk_dll/simulation/timing/simulate_vcs.sh" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x47B92F24"></File>
+        <File name="./bclk_dll/simulation/timing/ucli_commands.key" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x9DC0E037"></File>
+        <File name="./bclk_dll/simulation/timing/vcs_session.tcl" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x28340249"></File>
+        <File name="./bclk_dll/simulation/timing/wave.do" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x4A4565F1"></File>
+        <File name="./bclk_dll.ucf" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0xBE7EC4BE"></File>
+        <File name="./bclk_dll.v" type="verilog" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x434FF447"></File>
+        <File name="./bclk_dll.veo" type="veo" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x4C92A34F"></File>
+        <File name="./bclk_dll.xdc" type="ignore" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x08511702"></File>
+        <File name="./bclk_dll_xmdf.tcl" type="tcl" timestamp="Sun Oct 26 09:45:11 GMT 2014" checksum="0x7B19EC8A"></File>
+      </FileSet>
+      <FileSet generator="all_documents_generator">
+        <File name="./bclk_dll/doc/clk_wiz_gsg521.pdf" type="ignore" timestamp="Sun Oct 26 09:45:16 GMT 2014" checksum="0x66FF61CD"></File>
+        <File name="./bclk_dll/doc/clk_wiz_v3_5_readme.txt" type="ignore" timestamp="Sun Oct 26 09:45:16 GMT 2014" checksum="0x1BF90E4F"></File>
+        <File name="./bclk_dll/doc/clk_wiz_v3_5_vinfo.html" type="ignore" timestamp="Sun Oct 26 09:45:16 GMT 2014" checksum="0xD0135075"></File>
+      </FileSet>
+      <FileSet generator="readme_documents_generator">
+        <File name="./readme_documents_generator.xlog" type="ignore" timestamp="Sun Oct 26 09:45:27 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="asy_generator">
+        <File name="./bclk_dll.asy" type="asy" timestamp="Sun Oct 26 09:45:22 GMT 2014" checksum="0x76A8EBC6"></File>
+      </FileSet>
+      <FileSet generator="ise_generator">
+        <File name="./bclk_dll.gise" type="ignore" timestamp="Sun Oct 26 09:45:26 GMT 2014" checksum="0x40FB99E2"></File>
+        <File name="./bclk_dll.xise" type="ignore" timestamp="Sun Oct 26 09:45:26 GMT 2014" checksum="0x58446EB8"></File>
+      </FileSet>
+      <FileSet generator="deliver_readme_generator">
+        <File name="./deliver_readme_generator.xlog" type="ignore" timestamp="Sun Oct 26 09:45:27 GMT 2014" checksum="0xFFFFFFFF"></File>
+      </FileSet>
+      <FileSet generator="flist_generator">
+        <File name="./bclk_dll_flist.txt" type="ignore" timestamp="Sun Oct 26 09:45:26 GMT 2014" checksum="0x44D6C3FD"></File>
+      </FileSet>
+    </FileSets>
+  </IPInstance>
+</BillOfMaterials>
