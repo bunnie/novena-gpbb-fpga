@@ -80,6 +80,7 @@ module novena_fpga(
 		   input wire CLK2_P,
 		   output wire FPGA_LED2,
 		   input wire RESETBMCU,
+		   input wire BATT_NRST,
 		   output wire APOPTOSIS
 	 );
 
@@ -163,9 +164,25 @@ module novena_fpga(
    wire       adc_go;
    wire [2:0] adc_chan;
    
-   wire [9:0] adc_in;
-   wire       adc_valid;
+   wire [9:0] adc_in_slowclk;
+   wire       adc_valid_slowclk;
    wire       slowclk;
+
+   reg [9:0]  adc_in;
+   reg 	      adc_valid;
+   reg [2:0]  adc_chan_slowclk;
+   reg 	      adc_go_slowclk;
+   
+
+   always @(posedge clk25) begin
+      adc_in[9:0] <= adc_in_slowclk[9:0];
+      adc_valid <= adc_valid_slowclk;
+   end
+
+   always @(posedge slowclk) begin
+      adc_chan_slowclk[2:0] <= adc_chan[2:0];
+      adc_go_slowclk <= adc_go;
+   end
    
    adc10cs022 adc10cs022 (
 			  .DIG_ADC_CS(F_DX13),
@@ -173,10 +190,10 @@ module novena_fpga(
 			  .DIG_ADC_OUT(F_DX12),
 			  .DIG_ADC_SCLK(F_DX7),
 
-			  .adc_in(adc_in),
-			  .adc_chan(adc_chan),
-			  .adc_valid(adc_valid),
-			  .adc_go(adc_go),
+			  .adc_in(adc_in_slowclk),
+			  .adc_chan(adc_chan_slowclk),
+			  .adc_valid(adc_valid_slowclk),
+			  .adc_go(adc_go_slowclk),
 			  
 			  .clk_3p2MHz(slowclk),
 			  .reset(reset)
@@ -225,6 +242,14 @@ module novena_fpga(
    ////// minor code.
    //////
    ////// This particular design gets Major version 0xB.
+   //////
+   ////// Note versions are maintained on both EIM and I2C for easy ID read-out
+   ////// Maybe should make it a parameter so there's just one place to change.
+   //////
+   // Minor version 0002, October 29 2014
+   //   Fix timing closure (adjust .UCF to make DA pins fast-slew)
+   //   Fix BATT_NRST issue
+   //   Tighten up I2C timing to ADC
    //////
    // Minor version 0001, October 19 2014
    //   Initial design to validate GPBB
@@ -354,7 +379,7 @@ module novena_fpga(
    // FPGA minor version code
    reg_ro reg_ro_41FFC ( .clk(bclk_dll), .bus_a(bus_addr_r), .my_a(19'h41FFC),
 			 .bus_d(ro_d), .re(!cs0_r && rw_r),
-			 .reg_d( 16'h0001 ) ); // minor version
+			 .reg_d( 16'h0002 ) ); // minor version
 
    // FPGA major version code
    reg_ro reg_ro_41FFE ( .clk(bclk_dll), .bus_a(bus_addr_r), .my_a(19'h41FFE),
@@ -392,7 +417,7 @@ module novena_fpga(
 
 		       // ID / version code
 		       // minor / major
-		       .reg_fc(8'h00), .reg_fd(8'h01), .reg_fe(8'h00), .reg_ff(8'h0B)
+		       .reg_fc(8'h00), .reg_fd(8'h02), .reg_fe(8'h00), .reg_ff(8'h0B)
 		       );
       
    ////////////////////////////////////
@@ -425,7 +450,7 @@ module novena_fpga(
 			  .RESET(reset), .LOCKED(o_locked));
    
    // lock it to the input path
-   BUFIO2FB bclk_o_fbk(.I(bclk_o), .O(o_fbk_in));  // was this
+   BUFIO2FB bclk_o_fbk(.I(bclk_o), .O(o_fbk_in)); 
 //   assign o_fbk_in = bclk_o;
 //   BUFG bclk_io_fbk(.I(bclk_io), .O(io_fbk_in));
    
@@ -527,7 +552,7 @@ module novena_fpga(
       counter <= counter + 1;
    end
 
-   assign FPGA_LED2 = counter[23];
+   assign FPGA_LED2 = counter[23] & BATT_NRST;  // dummy-tie BATT_NRST, it's normally high
 
    //////////////
    // IOBUFs as required by design
