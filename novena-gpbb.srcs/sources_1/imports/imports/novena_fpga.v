@@ -19,6 +19,8 @@
 
 `timescale 1ns / 1ps
 
+/// note: must set "-g UnusedPin:PullNone" in bitgen to avoid conflicts with unused pins
+
 module novena_fpga(
 		   // CPU EIM register interface mapping
 		   input wire EIM_BCLK,
@@ -81,6 +83,10 @@ module novena_fpga(
 		   output wire FPGA_LED2,
 		   input wire RESETBMCU,
 		   input wire BATT_NRST,
+		   input wire SMB_SCL, // unused, make sure it's not pulled down by bitgen
+		   input wire SMB_SDA,
+		   input wire DDC_SCL, // unused, make sure it's not pulled down by bitgen
+		   input wire DDC_SDA,
 		   output wire APOPTOSIS
 	 );
 
@@ -246,6 +252,9 @@ module novena_fpga(
    ////// Note versions are maintained on both EIM and I2C for easy ID read-out
    ////// Maybe should make it a parameter so there's just one place to change.
    //////
+   // Minor version 0003, November 11 2014
+   //   Fix issue with unused pins being pulled down, causing I2C bus to fail on unconnected pins
+   //////
    // Minor version 0002, October 29 2014
    //   Fix timing closure (adjust .UCF to make DA pins fast-slew)
    //   Fix BATT_NRST issue
@@ -379,7 +388,7 @@ module novena_fpga(
    // FPGA minor version code
    reg_ro reg_ro_41FFC ( .clk(bclk_dll), .bus_a(bus_addr_r), .my_a(19'h41FFC),
 			 .bus_d(ro_d), .re(!cs0_r && rw_r),
-			 .reg_d( 16'h0002 ) ); // minor version
+			 .reg_d( 16'h0003 ) ); // minor version
 
    // FPGA major version code
    reg_ro reg_ro_41FFE ( .clk(bclk_dll), .bus_a(bus_addr_r), .my_a(19'h41FFE),
@@ -417,7 +426,7 @@ module novena_fpga(
 
 		       // ID / version code
 		       // minor / major
-		       .reg_fc(8'h00), .reg_fd(8'h02), .reg_fe(8'h00), .reg_ff(8'h0B)
+		       .reg_fc(8'h00), .reg_fd(8'h03), .reg_fe(8'h00), .reg_ff(8'h0B)
 		       );
       
    ////////////////////////////////////
@@ -552,7 +561,8 @@ module novena_fpga(
       counter <= counter + 1;
    end
 
-   assign FPGA_LED2 = counter[23] & BATT_NRST;  // dummy-tie BATT_NRST, it's normally high
+   assign FPGA_LED2 = counter[23] & BATT_NRST & SMB_SCL & SMB_SDA & DDC_SCL & DDC_SDA;  // dummy-tie BATT_NRST, it's normally high
+   // the LED will also now flicker when I2C traffic happens but at least they aren't tied-down as unused inputs
 
    //////////////
    // IOBUFs as required by design
